@@ -1,11 +1,19 @@
-CHANGES - 2.3.1 - 2019-12-04
+CHANGES - 2.3.2 - 2019-12-18
 ============================
+
+
+Changes in CUPS v2.3.2
+----------------------
+
+- Localization updates.
 
 
 Changes in CUPS v2.3.1
 ----------------------
 
 - Documentation updates (Issue #5661, #5674, #5682)
+- CVE-2019-2228: The `ippSetValuetag` function did not validate the default
+  language value.
 - Fixed a crash bug in the web interface (Issue #5621)
 - The PPD cache code now looks up page sizes using their dimensions
   (Issue #5633)
@@ -29,8 +37,9 @@ Changes in CUPS v2.3.1
   Issue #5683, Issue #5684)
 - Fixed an error in the jobs web interface template (Issue #5694)
 - Fixed an off-by-one error in `ippEnumString` (Issue #5695)
-- The IPP backend did not detect all cases where a job should be retried using
+- Fixed some new compiler warnings (Issue #5700)
 - Fixed a few issues with the Apple Raster support (rdar://55301114)
+- The IPP backend did not detect all cases where a job should be retried using
   a raster format (rdar://56021091)
 - Fixed spelling of "fold-accordion".
 - Fixed the default common name for TLS certificates used by `ippeveprinter`.
